@@ -16,7 +16,7 @@ body{
 .header{
     width: 980px;
     margin:auto;
-    height: 125px;
+    // height: 125px;
     display: flex;
     justify-content: space-between;
     align-items: self-end;
@@ -162,7 +162,7 @@ body{
         text-decoration: none;
         color:#6c6c6c;
         font-size: 30px;
-        padding-bottom:18px;
+        padding-bottom:14px;
         @include media('<980px'){
 
 
