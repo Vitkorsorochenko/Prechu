@@ -186,6 +186,8 @@ body{
     background-size: cover;
  }
 .conteiner{
+    display: flex;
+    align-items: center;
     width: 980px;
     margin:auto;
     img{
@@ -198,6 +200,19 @@ body{
         img{
             height: 429px;
         }
+    }
+}
+.conteiner_text{
+    line-height: 50px;
+    span{
+        width: 400px;
+        color:#fff;
+        font-size: 42.35px;
+    }
+    p{
+        font-size: 26.35px;
+        color:#fff;
+        width: 270px;
     }
 }
 .border_bg{
