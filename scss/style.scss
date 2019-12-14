@@ -1,0 +1,340 @@
+@import '_include-media.scss';
+@font-face{
+    font-family: "Segoe";
+    src : url("../fonts/Segoe.woff");
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    // font-family:'Segoe';
+    font: 16px/18px Segoe, sans-serif;
+}
+.header-wrapper{
+   width: 100%;
+}
+.header{
+    width: 980px;
+    margin:auto;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    img{
+        margin-top:30px;
+    }
+    @include media('<1042px'){
+        img{
+            padding-left:30px;
+        }
+        
+    }
+}
+// МЕНЮ
+// .menu_ {
+//     margin-top: 30px;
+//     padding-top:3px;
+//     padding-left: 11px;
+//     width: 57px;
+//     height: 43px;
+//     display: flex;
+//     align-items: center;
+//     text-align: right;
+//     background: #5094f2;
+//     border-radius: 2px;
+// }
+
+// .menu__icon {
+//    display: none;
+//    width: 45px;
+//    height: 35px;
+//    position: relative;
+//    cursor: pointer;
+// }
+
+// .menu__icon span {
+//   display: block;
+//   position: absolute;
+//   height: 5px;
+//   width: 35px;
+//   background: #ffffff;
+//   opacity: 1;
+//   left: 0;
+//   transform: rotate(0deg);
+//   transition: .25s ease-in-out;
+// }
+
+// .menu__icon span:nth-child(1) {
+//   top: 0px;
+// }
+
+// .menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+//   top: 13px;
+// }
+
+// .menu__icon span:nth-child(4) {
+//   top: 26px;
+//  }
+
+// .menu__links-item {
+//     display: inline-block;
+//     color: #333333;
+//     font-family: Arial;
+//     font-size: 14px;
+//     line-height: 30px;
+//     padding: 0 10px;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     cursor: pointer;
+// }
+
+// .menu__links-item:hover {
+//     text-decoration: underline;
+// }
+
+// .menu.menu_state_open .menu__icon span:nth-child(1) {
+//   top: 18px;
+//   width: 0%;
+//   left: 50%;
+// }
+
+// .menu.menu_state_open .menu__icon span:nth-child(2) {
+//   transform: rotate(45deg);
+// }
+
+// .menu.menu_state_open  .menu__icon span:nth-child(3) {
+//   transform: rotate(-45deg);
+// }
+
+// .menu.menu_state_open  .menu__icon span:nth-child(4) {
+//   top: 18px;
+//   width: 0%;
+//   left: 50%;
+// }
+
+// .menu.menu_state_open .menu__links {
+//   display: block;  
+// }
+// @media screen and (max-width:>1200px){
+//     .menu__icon{
+//         display: none;
+//       }
+// }
+// @media screen and (max-width: <500px) {
+//   .menu__icon{
+//     display: inline-block;
+//   }
+  
+//   .menu__links {
+//     position: fixed;
+//     display: none;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     margin-top: 52px;
+//     background-color: rgba(0, 0, 0, 0.8);
+//     z-index: 1000;
+//     overflow: auto;
+//   }
+  
+//   .menu__links-item {
+//     display: block;
+//     padding: 10px 0;
+//     text-align: center;
+//     color: #ffffff;
+//   }
+// }
+
+//---------------
+
+.nav{
+    margin-top:40px;
+    float:right;
+    @include media('<980px'){
+    padding-right: 150px;
+}
+
+    li{
+        float:left;
+        padding-right:40px;
+    }
+    a{
+        text-decoration: none;
+        color:#6c6c6c;
+        font-size: 30px;
+        padding-bottom:18px;
+        @include media('<980px'){
+
+
+        }
+    }
+    a:hover{
+        border-bottom:3px solid #5094f2;
+    }
+
+}
+.main_{
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+
+ }
+.gallery{
+    width: 100%;
+    background: url(../img/bg-iphones.png) no-repeat;
+    position: relative;
+    background-size: cover;
+ }
+.conteiner{
+    width: 980px;
+    margin:auto;
+    img{
+        margin-top: 33px;
+    }
+    @include media('<1042px'){
+        padding-left:30px;
+    }
+    @include media('<921px'){
+        img{
+            height: 429px;
+        }
+    }
+}
+.border_bg{
+    margin-top: -7px;
+    background: url(../img/border.png) repeat-x;
+    height: 10px;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+}
+// .buttom{
+//     display: flex;
+//     justify-content: center;
+//     margin-top: -160px;
+// }
+.conteiner_block{
+    padding-top: 68px;
+    display:flex;
+    justify-content: space-between;
+    width: 980px;
+    margin:auto;  
+    @include media('<998px'){
+        flex-wrap: wrap;
+        width:70%;
+    }
+}
+.block01,.block02,.block03{
+    width: 255px;
+    h1{
+        color:#5094f2;
+        font-size: 20.35px;
+        text-align:center;
+    }
+    p{
+        color:#9f9f9f;
+        font-size: 14.35px;
+        text-align:center;  
+    }
+    img{
+        padding-left: 30px;
+        margin-bottom: 37px;
+    }
+}
+.block03{
+    @include media('<998px'){
+        padding-top:30px;
+        margin:auto;
+    }
+    @include media('<746px'){
+        margin:0;
+    }
+}
+.block01,.block02,.block03{
+    @include media('<663px'){
+        margin:auto;
+        margin-bottom: 30px;
+    }
+}
+.icon01,.icon02,.icon03{
+    position: absolute;
+}
+.icon01{
+    margin-top: -188px;
+    margin-left: 56px;
+}
+.icon02{
+    margin-top: -175px;
+    margin-left: 45px;
+}
+.icon03{
+    margin-top: -182px;
+    margin-left: 43px;
+}
+
+
+
+.conteiner_shopping{
+    display: flex;
+    padding-top: 78px;
+    width: 980px;
+    margin:auto;
+    h2{
+font-size: 42.35px;
+padding-bottom: 30px;
+padding-left:20px;
+color:#6f7173;
+    }
+    @include media('<900px'){
+        display: block;
+        margin:auto;
+    }
+}
+.shop{
+    width: 430px;
+    @include media('<900px'){
+        margin:auto;
+    }
+    @include media('<735px'){
+        margin-left:30px;
+    }
+}
+.bullet{
+    width: 430px;
+    padding-top:68px;
+    h3{
+        padding-bottom: 35px;
+        font-size: 26.35px;
+        color:#6f7173;
+    }
+    p{
+        color:#909090;
+        line-height: 36px;
+    }
+    @include media('<900px'){
+        margin:auto;
+    }
+    @include media('<735px'){
+        margin-left:30px;
+    }
+}
+.footer{
+    width: 980px;
+    margin: auto;
+    p{
+        color:#909090;
+        font-size: 15.35px;
+       text-align: center;
+        margin-top: 110px;
+        margin-bottom: 45px;
+
+    }
+    a{
+        text-decoration: none;
+        color:#909090;
+        cursor: pointer;
+    }
+    @include media('<900px'){
+        width: 100%;
+    }
+}
